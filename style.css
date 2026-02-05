@@ -1,22 +1,109 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Corpo da página */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #333;
 }
 
+/* Container da lista */
+.container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 400px;
+  max-width: 90%;
+}
+
+/* Título */
 h1 {
-  color: #490505;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2575fc;
 }
 
-input {
-  padding: 8px;
+/* Área do input */
+.input-area {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
-button {
-  padding: 8px 12px;
+input[type="text"] {
+  width: 75%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.add-btn {
+  background: #2575fc;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  background: #6a11cb;
+}
+
+/* Lista */
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 li {
-  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  background-color: #e0e0e0;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #888;
+  opacity: 0.7;
+}
+
+/* Botões de ação */
+button.delete-btn {
+  background: #ff4b5c;
+  padding: 6px 10px;
+}
+
+button.delete-btn:hover {
+  background: #ff1f3d;
+}
+
+button.done-btn {
+  background: #28a745;
+  padding: 6px 10px;
+}
+
+button.done-btn:hover {
+  background: #1e7e34;
 }

@@ -2,18 +2,25 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Lista de Tarefas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List JS</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <h1>Minha Lista de Tarefas</h1>
-
-  <input type="text" id="taskInput" placeholder="Digite uma tarefa">
-  <button id="addTaskBtn">Adicionar</button>
-
-  <ul id="taskList"></ul>
+  <div class="container">
+    <h1>Todo List JS</h1>
+    
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="Digite sua tarefa...">
+      <button class="add-btn" onclick="addTask()">Adicionar</button>
+    </div>
+    
+    <ul id="taskList">
+      <!-- Tarefas vão aparecer aqui -->
+    </ul>
+  </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
